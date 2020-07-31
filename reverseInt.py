@@ -10,3 +10,5 @@ def reverseInt(n):
     
 reverseInt(-135) #must print -531
 reverseInt(531) #must print 135
+reverseInt(13250834) #must print 43805231
+reverseInt(-122235) #must print -532221
