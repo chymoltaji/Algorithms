@@ -13,6 +13,6 @@ correct = [0, 1, 1, 1, 2, 2, 3, 3, 7, 9, 15, 17, 22, 2017]
 
 result = bubbleSort(arr)
 if result == correct:
-    print(f"CORRECT:\t{arr}\nSorted to:\t{result}")
+    print(f"CORRECT: Sorted to\t{result}")
 else:
-    print(f"INCORRECT:\t{arr}\nsorted to:\t{result}")
+    print(f"INCORRECT: Sorted to\t{result}")
