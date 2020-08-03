@@ -4,24 +4,24 @@ def mergeSort(array):
         mid = n//2
         left = array[:mid]
         right = array[mid:]
-        array = []
         left = mergeSort(left)
         right = mergeSort(right)
-        # print (mid, left, right)
-        
-        while len(left)>0 and len(right)>0:
-            if left[0]<right[0]:
+
+        array = []
+        while len(left) > 0 and len(right) > 0:
+            if left[0] < right[0]:
                 array.append(left[0])
+                print(f"LEFT: {left}")
                 left.pop(0)
             else:
+                print(f"RIGHT: {right}")
                 array.append(right[0])
                 right.pop(0)
-
-        for i in left: 
-            array.append(i) 
-        for i in right: 
-            array.append(i) 
-    
+            print(f"LIST: {array}")
+        for i in left:
+            array.append(i)
+        for j in right:
+            array.append(j)   
     return array
 
 arr = [0, 2, 15, 2017, 1, 1, 17, 3, 7, 1, 2, 3, 9, 22]
