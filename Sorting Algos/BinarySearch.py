@@ -16,4 +16,4 @@ mid = binary_search(ordered_list, value, 0, len(ordered_list)-1)
 if mid == "NOT FOUND":
     print("Value not in list")
 else:
-    print(F"Value {value} found at index: {mid}")
+    print(f"Value {value} found at index: {mid}")

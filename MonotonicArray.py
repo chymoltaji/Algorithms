@@ -1,5 +1,5 @@
 # Given an array of integers, determine whether the array is monotonic or not.
-A = [6, 5, 4, 4] 
+A = [6, 5, 4, 4]
 B = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
 C = [1, 1, 2, 3, 7]
 D = [2, 5, 1, 7, 9, 1, 4]
@@ -16,9 +16,9 @@ def isMonotonic(array):
             decreasing += 1
 
     if increasing == 0:
-        print("True \t |increasing")
-    elif decreasing == 0:
         print("True \t |decreasing")
+    elif decreasing == 0:
+        print("True \t |increasing")
     else:
         print("False \t |not monotonic")
 

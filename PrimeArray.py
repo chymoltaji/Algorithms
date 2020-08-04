@@ -6,12 +6,11 @@ n = 35
 
 def prime_array(num_in):
     result = []
-    for i in range(num_in):
-        if i > 1:
-            for j in range(2, i):
-                if (i%j) == 0:
-                    break
-            else:
-                result.append(i)
+    for i in range(1, num_in):
+        for j in range(2, i):
+            if (i%j) == 0:
+                break
+        else:
+            result.append(i)
     print(result)
 prime_array(n)

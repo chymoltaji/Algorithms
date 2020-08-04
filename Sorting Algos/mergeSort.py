@@ -21,7 +21,7 @@ def mergeSort(array):
         for i in left:
             array.append(i)
         for j in right:
-            array.append(j)   
+            array.append(j)
     return array
 
 arr = [0, 2, 15, 2017, 1, 1, 17, 3, 7, 1, 2, 3, 9, 22]
