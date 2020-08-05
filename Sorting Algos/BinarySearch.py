@@ -17,3 +17,4 @@ if mid == "NOT FOUND":
     print("Value not in list")
 else:
     print(f"Value {value} found at index: {mid}")
+
