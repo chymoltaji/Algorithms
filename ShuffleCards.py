@@ -3,6 +3,10 @@ Description: Shuffling a deck of cards without using loops or the random library
 Title: ShuffleCards.py
 Author: Cheyenne Moltaji
 Date: 10/22/2020
+Usage: Shuffle any even list recursively
+Primary code: 
+    mid = len(deck)//2
+    deck[::2], deck[1::2] = deck[:mid], deck[mid:]
 """
 
 from itertools import product
