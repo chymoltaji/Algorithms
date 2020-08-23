@@ -14,7 +14,7 @@ import os, string, random
 GREEN = '\033[92m'
 CHARS = list(string.printable)[:-6] #all printable chars omitting chars that affect formating
 DIMS = (60, 25)
-ITERATIONS = 100
+ITERATIONS = 200
 
 #Create appropriately sized list/matrix of random printable values
 matrix = [[random.choice(CHARS) for x in range(DIMS[0])] for j in range(DIMS[1])]
@@ -25,6 +25,7 @@ clear()
 
 def print_matrix(matrix):
     """Prints matrix in desirable format, in place"""
+    clear()
     for row in matrix:
         print(GREEN+" ".join(row))
 
