@@ -15,11 +15,11 @@ import os
 clear = lambda: os.system('cls')
 clear()
 
-# FRAMES = ["_", ".", "*", "^", "*", "."]
-FRAMES = ["_", ".", "^", "."]
+FRAMES = ["_", ".", "*", "^", "*", "."]
+# FRAMES = ["_", ".", "^", "."]
 # FRAMES = [".", "o", "*", "O", "0"]
 SCREEN  = [" "]*50
-ITERATIONS = 200
+ITERATIONS = 300
 FRAMES_PER_SCREEN = 5
 
 def print_screens(screens):
@@ -27,7 +27,21 @@ def print_screens(screens):
     for i in range(ITERATIONS):
         clear()
         print(" ".join(screens[i%len(screens)]))
-        sleep(0.02)
+        print(" ".join(screens[(i+5)%len(screens)]))
+        print(" ".join(screens[(i+12)%len(screens)]))
+        print(" ".join(screens[(i+2)%len(screens)]))
+        print(" ".join(screens[(i+20)%len(screens)]))
+        print(" ".join(screens[(i+7)%len(screens)]))
+        print(" ".join(screens[(i+9)%len(screens)]))
+        print(" ".join(screens[(i+47)%len(screens)]))
+        print("\n\n\n\n\n")
+        print(" ".join(screens[(i+7)%len(screens)]))
+        print(" ".join(screens[(i+9)%len(screens)]))
+        print(" ".join(screens[(i+47)%len(screens)]))
+        print(" ".join(screens[(i+5)%len(screens)]))
+        print(" ".join(screens[(i+12)%len(screens)]))
+        print(" ".join(screens[(i+2)%len(screens)]))
+        sleep(0.001)
     
 def create_screens():
     """Generates keyframes called new_screen for each step of the animation"""
